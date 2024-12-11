@@ -1,92 +1,95 @@
-.uploadreq-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.uploadreq-container{
+.upload-container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    background:white;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 650px;
-    width: 1080px;
-}
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
 
-.uploadreq-rectangle{
-    display: flex;
-    flex-direction: column;
-    margin-top: -30px;
-    position: relative;
-    width: 400px;   
-    max-height: 100%;
-    width: 65%;
-    background:white;
-}
-
-.pc-upload-button, .pe-upload-button, .mc-upload-button, .r-upload-button{
-    width: 100px;
-    height: 28px;
-}
-
-.uploadreq-header{
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+.upload-header {
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
-    justify-content: center;
-}
+    margin-bottom: 20px;
+    }
 
-.uploadreq-top{
-    display: flex;
-    flex-direction: row;
-}
-
-.uploadreq-p2{
-    margin-left: 25%;
-}
-
-.box{
+.requirements-table-container {
+    margin-bottom: 20px;
     width: 100%;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    }
+
+.requirements-table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: left;
+    }
+
+.table-header {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    }
+
+.file-row {
+    display: flex;
+    align-items: center;
+    }
+
+.upload-input {
+    margin-right: 10px;
+    }
+
+.file-name {
+    margin-right: 10px;
+    font-size: 14px;
+    }
+
+.remove-file {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    }
+
+.status-valid {
+    color: green;
+    }
+
+.status-invalid {
+    color: red;
+    }
+
+.moa-validation-container {
     display: flex;
     flex-direction: column;
-}
-
-.parent-consent, .med-exam, .psychological-exam, .resume{
-    position: relative;
-    height: 35px;
-    width: 100%;
-    border: 1px solid gray;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    color: gray;
-    margin-top: 35px;
-}
-
-@media (max-width: 768px) {
-    .uploadreq-container{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background:white;
-        border-radius: 50px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        justify-content: center;
-        align-items: center;
-        height: 760px;
-        width: 100%;
+    align-items: center;
     }
 
-    .uploadreq-header{
-        font-size: 0.8rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-align: center;
-        justify-content: center;
-    }
+.moa-validation-button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+background-color: #007BFF;
+color: white;
+border-radius: 5px;
+}
+
+.moa-validation-button.disabled {
+background-color: #CCCCCC;
+cursor: not-allowed;
+}
+
+.moa-validation-button.enabled {
+background-color: #28a745;
 }
